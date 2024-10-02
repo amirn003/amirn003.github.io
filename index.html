@@ -1,626 +1,375 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+  <link rel="manifest" href="./Favicon/site.webmanifest">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Welcome to my Portfolio</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- title -->
+  <title>Amir Naar | Portfolio</title>
 </head>
 
 <body>
+  <!-- navbar -->
+  <main-header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Amir N</a>
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active p-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <a class="nav-link p-4" aria-current="page" href="about.html">About</a>
+            </li>
+            <!-- <a class="nav-link p-4" aria-current="page" href="pricing.html">Pricing</a> -->
+          </li>
+          <a class="nav-link p-4" aria-current="page" href="projects.html">Projects</a>
+            </li>
+          </ul>
+         <a href="cv/myCV.pdf" download="AmirNaar " class="my-cv">Download CV</a>
+        </div>
+      </div>
+      </nav>
+  </main-header>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+  <!-- hero section -->
+  <div class="first-section">
+    <div class="container-fluid">
 
-      <nav id="nav-wrap">
+      <div class="row justify-content-center">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+        <div class="col-md-6">
+          <div class="intro">
+            <p class="title">-INTRODUCTION</p>
+            <p class="hi">Hi There!👋</p>
+            <h1 class="my-name">I'm <span>Amir Naar</span></h1>
+            <p class="slogun">I help startup to create stunning websites,
+              that make impact on market.</p>
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
+            <a href="#connectMe" class="homeBtn">Let’s create an awesome website !</a>
+            <div class="social-media">
+              <a href="www.linkedin.com/in/amir-naar/"><img src="./img/LinkedIn Circled.png" alt="linkedin"></a>
+              <a href=""> <img src="img/twt2.png" alt="twitter"></a>
+              <a href="https://github.com/amirn003"><img src="./img/GitHub.png" alt="github"></a>
 
-      </nav> <!-- end #nav-wrap -->
+            </div>
+          </div>
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Amir</h1>
-            <h3>I'm a <span>Freelance Developer</span> with a background in Bioinformatics, specializing in <span>back-end development</span> and managing large-scale datasets through genemome sequencing. <br>
-              I also enjoy on <span>Web Development</span>. with Django being currently my framework of choice. <br>
-            </h3>
-            <hr />
-            <!--<ul class="social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul> -->
-            <h3 style="color: white">
-              Below are samples of projects I've developed:
-              <ul>
-                <li><a style="color: rgb(100, 175, 185)" href="https://amirn003.github.io/SpeechDetection/">Speech Detection</a></li>
-                <li><a style="color: rgb(100, 175, 185)" href="https://amirn003.github.io/CountdownClock/">Countdown Timer</a></li>
-             </ul>
-
-            </h3>
-
-         </div>
+        </div>
+        <div class="col-md-6 pb-0 img">
+          <img src="img/profil.jpeg" alt="" srcset="">
+        </div>
       </div>
 
+    </div>
+  </div>
+  <!-- projects -->
+
+  <div class="section">
+    <div class="container-fluid">
+      <p class="title">-PROJECTS</p>
+      <div class="poject-section">
+        <h2>FEATURED WORK</h2>
+        <p class="para">I love making websites that can grow big, finding useful solutions, and always learning to get better in the IT world.</p>
+      </div>
+      <div class="project-grid">
+        <div class="item1">
+          <div class="layer">
+            <a href="https://github.com/Iamdivyak/education-site" target="_blank">GitHub</a> <!--open link in new tab-->
+            <a href="https://iamdivyak.github.io/education-site/" target="_blank">Live Web</a>
+          </div>
+        </div>
+        <div class="item2">
+          <div class="layer">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">Live Web</a>
+          </div>
+
+        </div>
+        <div class="item3">
+          <div class="layer">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">Live Web</a>
+          </div>
+
+        </div>
+        <div class="item4">
+          <div class="layer">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">Live Web</a>
+          </div>
+
+        </div>
+        <div class="item5">
+          <div class="layer">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">Live Web</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- services -->
+
+  <div class="section bg">
+    <div class="container-fluid">
+      <p class="title">-SERVICES</p>
+      <div class="poject-section">
+        <h2>SERVICES I PROVIDE</h2>
+        <p class="para">The goal is not to build a website. The goal is to build your business.</p>
+      </div>
+      <div class="services">
+
+        <div class="service-section">
+          <div class="service">
+            <img src="./img/uiux.png" alt="ui/ux design">
+            <h3>UI/UX Design</h3>
+            <p>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and
+              usable products which aid business growth.</p>
+          </div>
+
+        </div>
+        <div class="service-section">
+          <div class="service">
+            <img src="./img/Web Design.png" alt="ui/ux design">
+            <h3>Web Development</h3>
+            <p>I use various web technologies to develop attractive websites which converts visitors to customers. I
+              develop creative and responsive website layouts.</p>
+          </div>
+
+        </div>
+        <div class="service-section">
+          <div class="service">
+            <img src="./img/WordPress.png" alt="ui/ux design">
+            <h3>Wordpress</h3>
+            <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or
+              MariaDB database with supported HTTPs.
+            <p>
+          </div>
+        </div>
+        <div class="service-section">
+          <div class="service">
+            <img src="./img/Google.png" alt="ui/ux design">
+            <h3>Google AD's</h3>
+            <p>Grow your business with Google Ads · Get in front of customers when they're searching for businesses like
+              yours on Google Search and Maps.
+            <p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- skills -->
+
+  <div class="section">
+    <div class="container-fluid">
+      <p class="title">-SKILLS</p>
+      <div class="skill-section">
+        <h2>AREA OF EXPERTISE</h2>
+        <p class="para">Let's kickstart your project and collaborate to build something amazing. I'll bring my skills to make your next project shine.</p>
+      </div>
+      <div class="skills">
+        <div class="skill border1 border_right">
+          <div class="items">
+            <img src="./img/html.png" alt="">
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="./img/css.png" alt="">
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="skill border1 border3">
+          <div class="items">
+            <img src="./img/javascript (1).png" alt="">
+            <p>JAVASCRIPT</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="./img/Bootstrap 1.png" alt="">
+            <p>BOOTSTRAP</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right">
+          <div class="items">
+            <img src="./img/node-js.png" alt="">
+            <p>Node.js</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="./img/react (2).png" alt="">
+            <p>React</p>
+          </div>
+        </div>
+        <div class="skill border1 border_right border7">
+          <div class="items">
+            <img src="./img/git (2).png" alt="">
+            <p>Git</p>
+          </div>
+        </div>
+        <div class="skill border1">
+          <div class="items">
+            <img src="./img/github (7).png" alt="">
+            <p>GitHub</p>
+          </div>
+        </div>
+        <div class="skill border_bottom borderSL">
+          <div class="items">
+            <img src="./img/adobe-xd.png" alt="">
+            <p>Adobe XD</p>
+          </div>
+        </div>
+        <div class="skill border2 border10">
+          <div class="items">
+            <img src="./img/photoshop.png" alt="">
+            <p>Photoshop</p>
+          </div>
+        </div>
+        <div class="skill border_right">
+          <div class="items">
+            <img src="./img/icons8-figma-512.png" alt="">
+            <p>Figma</p>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="items">
+            <img src="./img/WordPress.png" alt="">
+            <p>WordPress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- connect me -->
+  <div class="section">
+    <div class="container-fluid bg rounded text-center pb-5 pos-relative">
+      <img src="./img/Rocket1.png" alt="">
+      <h1 class="custom-h1">HAVE A PROJECT IN MIND?</h1>
+      <p class="para p-4">Turn your dream website into reality with us. Let's get started!</p>
 
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
 
-   </header> <!-- Header End -->
+      <a href="" class="homeBtn">Let’s create an awesome website</a>
 
 
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
+    </div>
+  </div>
+  <!-- about me -->
+  <div class="section bg">
+    <div class="container-fluid">
+      <p class="title">-ABOUT</p>
+      <div class="About-section">
+        <h2>ABOUT ME</h2>
+        <div class="row img-sec">
+          <div class="col-md-6">
+            <p class="para">
+              I'm Amir Naar, a junior Web Designer with front-end development skills. I'm enthusiastic about using my varied experiences to solve complex problems and craft enjoyable user experiences. My expertise lies in web development, front-end web development, UI design, and SEO analytics.
+              <br> <br>
+              I develop websites with HTML, CSS and JavaScript. I have top skills in using design softwares like Figma,
+              Adobe XD, and PhotoShop.
+              <br> <br>
 
-      <div class="row">
 
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>Hello, my name is Amir! I was born in Bordeaux, a city I love.
-            Solver-issues resolution oriented.
             </p>
+            <br>
+            <a href="" class="homeBtn">HIRE ME</a>
 
-            <div class="row">
+            <a href="cv/myCV.pdf" download="AmirNaar " class="my-cv">Download CV</a>
 
-               <!--<div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Amir Naar</span><br>
-						   <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br>
-						   <span>(123)456-7890</span><br>
-                     <span>anyone@website.com</span>
-					   </p>
-
-               </div> -->
-
-               <div class="columns download">
-                  <p>
-                     <a href="https://github.com/amirn003/myceevee/raw/main/myCV.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+          </div>
+          <div class="col-md-6 img-sec text-center">
+            <img src="./img/Girl is working on laptop at a remote job.png" class="img-fluid"
+              alt="Girl is working on laptop at a remote job.png">
+          </div>
+        </div>
       </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Bordeaux</h3>
-                  <p class="info">Master in BioInformatics<span>&bull;</span> <em class="date">2015</em></p>
-
-                  <p>
-                  The multidisciplinary Master program combines the areas of Life Sciences and Computer Science.
-                  The skills acquired during this training allow to face the challenges of biology 2.0 with the new technologies for producing high-throughput data on living organisms. The goal is to acquire a double competence in computer science (algorithmic and programming) and biology.
-                  <br>
-                  Fields studied: Omics, SQL, Imaging, Algorithms, Object Oriented Programming,
-                  Software Engineering, Statistics, Algorithmics, Biomodelisation, Dataming, Project Management, Database, Phylogeny, Python, Java, C++, UNIX system...
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Bordeaux</h3>
-                  <p class="info">Bachelor of Science (B.Sc.), Biology, Moleculary, Cellulary and Physiology<span>&bull;</span> <em class="date">2013</em></p>
-
-                  <p>
-                  The scientific objectives of the Cellular Biology, Physiology, Pathology BCPP specialization are to provide a multidisciplinary and integrated approach to animal and human biology in direct contact with the realities of research. Conceptual and methodological tools of cell biology and physiology that allow an integrative approach - from the genome to the organism - to the questions that arise in modern biology and in particular to the understanding of human pathologies.<br>
-                  Fields studied: Molecular biology, Biochemisty, Statistics, Immunology, Animal and Vegetal Physiology, Mathematics applied to biology, Informatics: advanced programming and database, Neurobiology.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Bioinformatician | DataScience | NGS</h3>
-                  <p class="info">SOPHIA GENETICS <span>&bull;</span> <em class="date">December 2019 - Present</em></p>
-
-                  <p>
-                  Maintenance, Development & Operations. <br>
-                  SOPHiA GENETICS is a fast-paced growing health-tech company. Combining deep expertise in life sciences, medical disciplines and mathematical modeling, we bring to market data analytics solutions to support healthcare professionals in better diagnosing and treating patients. Today SOPHiA’s technologies are being adopted and trusted by over 1000 leading hospitals worldwide, all connected to each other and motivated to provide equal benefits to all patients.
-                  Member of the Tertiary analysis team, which is transversal team involved in four business lines: Alamut, Hereditary diseases, Oncology and TrialMatch. <br>
-                  ○ Development of a new API with FastAPI to access data from our internal database. <br>
-                  ○ MANE (Matched Annotation from NCBI and EMBL-EBI) prioritization implementation: this enhancement provides a more comprehensive annotation by improving transcript mapping on the panel’s target regions, without impacting the detection capabilities or accuracy of the SOPHiA Exome Solution. <br>
-                  ○ Major contribution to the refinement of gene panels and the integration of MANE prioritization for large panel products. Among these products: Clinical Exome Solution panel (CES v3), Twist HCExome panels, Whole Exome Solution panel (WES v1). <br>
-                  ○ Fast-track update in SOPHiA DDM. Migration of the release kit. <br>
-                  ○ Re-implementation of the ClinVar catalog integration in Alamut Visual: due to formatting changes and the increase of the amount of data, the C++ processes were outdated and did not allow to update this catalog anymore, complete re-development of the processes from scratch in Python to ensure a regular update of ClinVar in Alamut Visual. <br>
-                  ○ Regular update of the catalogs for Alamut products (ClinVar, MasterMind). Maintenance of the Alamut backend. <br>
-                  ○ Bio-IT Support. Scientific Customer Support. <br>
-                  ○ Python, PHP, Bash, PostegreSQL, MySQL, FastAPI, SnakeMake, Conda, Docker.
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Bioinformatician</h3>
-                  <p class="info">Gustave Roussy <span>&bull;</span> <em class="date">February 2018 - December 2019</em></p>
-
-                  <p>
-                  Management of data analysis from high throughput sequencing (NGS) in diagnosis. <br>
-                  Gustave Roussy is the first leader cancer-research hospital in Europe and ranked among the top 3 best specialized hospitals in the world . It is a centre for high quality patient care, research and teaching. <br>
-                  ○ Development and maintenance of pipelines to treat and analyze different types of tumors in somatic and constitutional genetics for diagnosis: lung cancer, colon cancer, melanoma, glioma, hematological malignancies, breast/ovarian cancer. <br>
-                  ○ Development and maintenance of a complete internal web server system used routinely for analysis via LAMP (Linux, Apache, Mysql, PHP) <br>
-                  ○ Management of NGS data from different types of sequencers: MiSeq, NextSeq, NovaSeq, Vela, S5XL. <br>
-                  ○ Resolution of routine issues related to the activity of the Department of Biology and Medical Pathology. <br>
-                  ○ Management, maintenance, development of analyzes in personalized medicine for translational research (projects: MOSCATO, SAFIR, OncoMine, OncoLung ...). <br>
-                  ○ PHP, MySQL, Perl, HTML, JavaScript
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Bioinformatician</h3>
-                  <p class="info">CHU Poitiers <span>&bull;</span> <em class="date">September 2015 - February 2018</em></p>
-
-                  <p>
-                  Development and implementation of NGS technology in routine for the molecular analysis of tumors. <br>
-                  ○ Management and analysis of NGS data within the lab labeled by DHOS and INCa. <br>
-                  ○ Pipeline developments to treat and analyze different types of tumors in somatic genetics: lung cancer, colon cancer, melanoma, glioma, hematological malignancies, breast / ovarian cancer in particular. <br>
-                  ○ Quality control of data, search for variants, annotation of mutations, reporting: PDF (LaTeX), EXCEL and HTML. <br>
-                  ○ Perl, Python, Bash, Java, Html, JavaScript.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Intern in Bioinformatic</h3>
-                  <p class="info">EMBL (European Molecular Biology Laboratory) <span>&bull;</span> <em class="date">March 2015 - August 2015</em></p>
-
-                  <p>
-                  Development and integration of analysis tools for high throughput sequencing <br>
-                ○ Development and improvement of tools for analysis and management of NGS data. GlobalQCReport, a program developed in Java, JavaScript, HTML and CSS which allows displaying several types of plots on Web pages. <br>
-                ○ BashGenerateReport, a program developed in Shell in order to generate synthetic summaries, easily manipulated with Excel, from NGS data. <br>
-                ○ Integration on the Galaxy platform of new tools for NGS data analysis. Analysis, workflows and comparison with others NGS tools (MACS, SICER). <br>
-                ○ Benchmarking: performance analysis and comparison of several NGS tools, used on the Galaxy platform, on the EMBL LSF cluster.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Volunteer Intern in Neurocomputing</h3>
-                  <p class="info">INSERM (U862), Neurocentre Magendie <span>&bull;</span> <em class="date">June 2014</em></p>
-
-                  <p>
-                  Development of a statistical test of comparison of models of cerebral connectivity. <br>
-                ○ Implication in the development of codes for making the tests. <br>
-                ○ Processing of results (languages used: Octave, R, LISREL).
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Co-development of a plugin for a software of image’s analysis</h3>
-                  <p class="info">CENBG (Centre d'Etudes Nucléaires de Bordeaux-Gradignan) <span>&bull;</span> <em class="date">February 2014 - May 2014</em></p>
-
-                  <p>
-                  Reconstruction and analysis of spectroscopic images. <br>
-                ○ Plug-in developed in Java, which allows analysing the acquisition data obtained from a particle accelerator. <br>
-                ○ Analysis of these data display a spectrum of measured energies. <br>
-                ○ Viewing images of the chemical distribution of an element in a sample.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand python"></span><em>Python</em></li>
-                  <li><span class="bar-expand perl"></span><em>Perl/Bash</em></li>
-						<li><span class="bar-expand php"></span><em>PHP</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand javascript"></span><em>JavaScript</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting. </span></h1>
-
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">The Universe is wonderfull</span></h2>
-            <p><span class="lead">Picture of the day </span> <a href="https://apod.nasa.gov/apod/astropix.html">here</a>!</p>
-
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
-      </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
+    </div>
+  </div>
+  <!-- connect me -->
+  <div id="connectMe" class="section">
+    <div class="container-fluid">
+      <p class="title">-CONTACT</p>
+      <div class="contact-section">
+        <h2>GET IN TOUCH</h2>
+        <p class="para">I'm here and ready to bring your project ideas to life. Just a click away!</p>
+        <div class="row img-sec justify-content-center">
+          <div class="col-md-6">
+
+            <div class="contact">
+              <a href="mailto:amir.naar.pro@gmail.com" class="email">
+                <img src="./img/email.png" alt="email me"> &nbsp; &nbsp;
+                amir.naar.pro@gmail.com</a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.linkedin.com/amir-naar"><img src="./img/LinkedIn Circled.png" alt="linkedin"></a>
+              <a href=""> <img src="img/twt2.png" alt="twitter"></a>
+              <a href="https://github.com/amirn003"><img src="./img/github (7).png" alt="github"></a>
 
             </div>
 
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>Success is not final, failure is not fatal: it is the courage to continue that counts.
-                           </p>
-                           <cite>Winston Churchill</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>There is nothing impossible to the they who will try.
-                           </p>
-                           <cite>Alexander The Great</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
+          </div>
+          <div class="col-md-6">
+            <div class="form">
+              <form class="formSubmit" action="https://formsubmit.co/el/f5c2f5944e723b39e701dbaeba282c9d" method="POST">
+                <input type="text" placeholder="Full Name"><br>
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Phone No."><br>
+                <textarea name="message" id="msg" placeholder="Message" cols="30" rows="10"></textarea><br>
+                <button class="button" type="submit">Send Message</button>
+              </form>
             </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">You can contact me here:
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <!--<aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Amir Naar<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
-
-            </aside> -->
-
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-   </section> <!-- Contact Section End-->
+  <!-- footer -->
+  <main-footer></main-footer>
+  <div class="footer-bottom"><span id="year"></span> © Portfolio Pvt. Ltd. All Rights Reserved.</div>
 
 
-   <!-- footer
-   ================================================== -->
-   <!--<footer>
+  <button class="back-to-top" type="button"></button>
 
-      <div class="row">
+<!--form script-->
+<script src="./js/form.js"></script>
 
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> --> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+  <!-- jquiry -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--custom js  -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
