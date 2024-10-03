@@ -13,7 +13,7 @@ class Footer extends HTMLElement {
           <div class="footer">
             <div class="sort-note">
               <a class="navbar-brand" href="index.html">Amir N</a>
-              <p>I’m Amir Naar, I am Freelance Developer with a background in Bioinformatics, specializing in back-end development.</p>
+              <p>I’m Amir Naar, a Freelance Developer with a background in Bioinformatics, specializing in Back-End development.</p>
               <hr style="margin: 20px 0; color: rgb(82, 82, 82); width: 60%;">
               <span class="contact"><a href="mailto:amir.naar.pro@gmail.com" class="email">
                 <img src="./img/email.png" alt="email me"> &nbsp; &nbsp;
