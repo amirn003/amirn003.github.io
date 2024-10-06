@@ -34,7 +34,7 @@ class Footer extends HTMLElement {
               </ul>
             </div>
             <div class="social-links text-center">
-              <a href="https://www.linkedin.com/amir-naar/"><img src="./img/LinkedIn Circled.png" alt="linkedin"></a><br>
+              <a href="https://www.linkedin.com/in/amir-naar"><img src="./img/LinkedIn Circled.png" alt="linkedin"></a><br>
               <!-- <a href=""><img src="./img/Instagram.png" alt="Instagram"></a><br> -->
               <a href=""> <img src="./img/Twitter.png" alt="twitter"></a><br>
               <a href="https://github.com/amirn003"><img src="./img/GitHub.png" alt="github"></a>
