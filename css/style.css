@@ -274,8 +274,8 @@ color: #0D0F16;
 }
 .item2 {
   grid-area: two;
-  /* background-image: url(../img/project2-CountDown.png); */
-  background-image: url(../img/project2-Mole.png);
+  background-image: url(../img/project2-SpeechDetection.png);
+  /* background-image: url(../img/project2-Mole.png); */
 }
 .item3 { grid-area: three; background-image: url(../img/project3-OMDB.png); }
 /* .item4 { grid-area: four; background-image: url(../img/project4-YMS.png); } */
