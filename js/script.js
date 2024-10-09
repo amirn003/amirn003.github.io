@@ -19,14 +19,12 @@ class Footer extends HTMLElement {
                 <img src="./img/email.png" alt="email me"> &nbsp; &nbsp;
                 amir.naar.pro@gmail.com</a></span>
             </div>
-            <div class="quike-links text-center">
+            <div style="margin-top:5%;" class="quike-links text-center">
               <ul>
                 <li>
                   <a href="index.html">Home</a>
                 </li>
-                <li>
-                  <a href="services.html">Services</a>
-                </li>
+
                 <li>
                   <a href="projects.html">Projects</a>
                 </li>
