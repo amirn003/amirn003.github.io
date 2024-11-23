@@ -66,9 +66,35 @@ window.addEventListener('scroll', toggleBtnBackToTop);
 
 let isTranslated = false;
 
+const originalText = {
+  hi: document.querySelector('.hi').textContent,
+  myName: document.querySelector('.my-name').innerHTML,
+  slogun: document.querySelector('.slogun').textContent,
+  homeBtn: document.querySelector('.homeBtn').textContent,
+  projectSectionH2: document.querySelector('.poject-section h2').textContent,
+  projectSectionPara: document.querySelector('.poject-section .para').textContent,
+  projectLinks: Array.from(document.querySelectorAll('.project-grid .layer a:nth-child(2)')).map(link => link.textContent),
+  servicesH2: document.querySelector('#services-provided h2').textContent,
+  servicesPara: document.querySelector('#services-provided .para').textContent
+};
+
 document.getElementById('translateButton').addEventListener('click', function() {
   if (isTranslated) {
-    location.reload();
+    // location.reload();
+    // Switch back to English
+    document.querySelector('.hi').textContent = originalText.hi;
+    document.querySelector('.my-name').innerHTML = originalText.myName;
+    document.querySelector('.slogun').textContent = originalText.slogun;
+    document.querySelector('.homeBtn').textContent = originalText.homeBtn;
+    document.querySelector('.poject-section h2').textContent = originalText.projectSectionH2;
+    document.querySelector('.poject-section .para').textContent = originalText.projectSectionPara;
+    document.querySelectorAll('.project-grid .layer a:nth-child(2)').forEach((link, index) => {
+      link.textContent = originalText.projectLinks[index];
+    });
+    document.querySelector('#services-provided h2').textContent = originalText.servicesH2;
+    document.querySelector('#services-provided .para').textContent = originalText.servicesPara;
+
+    isTranslated = false;
   } else {
     // INTRODUCTION
     document.querySelector('.hi').textContent = 'Bonjour !👋'
