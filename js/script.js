@@ -64,32 +64,36 @@ const toggleBtnBackToTop = () => {
 btnBackToTop.addEventListener('click', backToTop);
 window.addEventListener('scroll', toggleBtnBackToTop);
 
+let isTranslated = false;
 
 document.getElementById('translateButton').addEventListener('click', function() {
-  // INTRODUCTION
-  document.querySelector('.hi').textContent = 'Bonjour !👋'
-  document.querySelector('.my-name').innerHTML = 'Je suis <span>Amir Naar</span>';
-  document.querySelector('.slogun').textContent = "J'aide les particuliers et les entreprises à créer des sites Web uniques qui se démarquent et ont un impact durable.";
-  document.querySelector('.homeBtn').textContent = 'Créons un site Web exceptionel !';
+  if (isTranslated) {
+    location.reload();
+  } else {
+    // INTRODUCTION
+    document.querySelector('.hi').textContent = 'Bonjour !👋'
+    document.querySelector('.my-name').innerHTML = 'Je suis <span>Amir Naar</span>';
+    document.querySelector('.slogun').textContent = "J'aide les particuliers et les entreprises à créer des sites Web uniques qui se démarquent et ont un impact durable.";
+    document.querySelector('.homeBtn').textContent = 'Créons un site Web exceptionel !';
 
 
-  // PROJECTS
-  document.querySelector('.poject-section h2').textContent = 'PROJETS REALISES';
-  document.querySelector('.poject-section .para').textContent = "J'ai une appétence par la construction de sites Web évolutifs, la création de solutions efficaces et l'apprentissage continue de nouvelles technologies.";
-  document.querySelectorAll('.project-grid .layer a:nth-child(2)').forEach(function(link, index) {
-    const translations = [
-        'Wiki En Direct',
-        'SpeechDetection En Direct',
-        'MovieSearcher En Direct',
-        'CountdownClock En Direct'
-    ];
-    link.textContent = translations[index];
-  });
+    // PROJECTS
+    document.querySelector('.poject-section h2').textContent = 'PROJETS REALISES';
+    document.querySelector('.poject-section .para').textContent = "J'ai une appétence par la construction de sites Web évolutifs, la création de solutions efficaces et l'apprentissage continue de nouvelles technologies.";
+    document.querySelectorAll('.project-grid .layer a:nth-child(2)').forEach(function(link, index) {
+      const translations = [
+          'Wiki En Direct',
+          'SpeechDetection En Direct',
+          'MovieSearcher En Direct',
+          'CountdownClock En Direct'
+      ];
+      link.textContent = translations[index];
+    });
 
-  // SERVICES
-  document.querySelector('#services-provided h2').textContent = 'LES SERVICES QUE JE FOURNIS';
-  document.querySelector('#services-provided .para').textContent = "Le but n'est pas de construire un site Web. Le but est de répondre à vos besoins.";
+    // SERVICES
+    document.querySelector('#services-provided h2').textContent = 'LES SERVICES QUE JE FOURNIS';
+    document.querySelector('#services-provided .para').textContent = "Le but n'est pas de construire un site Web. Le but est de répondre à vos besoins.";
 
-
-
+    isTranslated = true;
+  }
 });
