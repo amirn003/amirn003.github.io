@@ -99,7 +99,7 @@ document.getElementById('translateButton').addEventListener('click', function() 
     // INTRODUCTION
     document.querySelector('.hi').textContent = 'Bonjour !👋'
     document.querySelector('.my-name').innerHTML = 'Je suis <span>Amir Naar</span>';
-    document.querySelector('.slogun').textContent = "J'aide les particuliers et les entreprises à créer des sites Web uniques qui se démarquent et ont un impact durable.";
+    document.querySelector('.slogun').textContent = "J'aide les particuliers et les entreprises à créer des sites Web uniques qui se démarquent et laissent une empreinte digitale mémorable.";
     document.querySelector('.homeBtn').textContent = 'Créons un site Web exceptionel !';
 
 
